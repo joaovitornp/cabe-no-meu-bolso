@@ -7,4 +7,4 @@ export const GA_MEASUREMENT_ID = 'G-ZJF214ZSDC';
 // de formulários, gravação de sessões, publicidade ou conversões otimizadas.
 // Só depois de conferir essas opções, mude o valor abaixo para true.
 // Sem ID válido + confirmação, nenhuma chamada de analytics é feita.
-export const PRIVACY_SETTINGS_CONFIRMED = false;
+export const PRIVACY_SETTINGS_CONFIRMED = true;
