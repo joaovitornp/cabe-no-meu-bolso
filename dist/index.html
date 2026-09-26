@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cabe no Meu Bolso?</title>
+  <meta name="description" content="Veja quanto sobra por dia até receber e teste o efeito de uma compra. Grátis, sem cadastro e sem conectar banco.">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23c7f36b'/%3E%3Cpath d='M8 9h16v11l-8 5-8-5z' fill='none' stroke='%231d2825' stroke-width='2.5'/%3E%3Cpath d='m12 16 3 3 6-6' fill='none' stroke='%231d2825' stroke-width='2.5'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.mjs"></script>
+  <script type="module" src="./landing.mjs"></script>
+</head>
+<body>
+  <header class="header wrap">
+    <a href="./" class="brand" aria-label="Cabe no Meu Bolso? Início"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M7 7h18v14l-9 5-9-5z"/><path d="m12 16 3 3 6-6"/></svg></span><span>Cabe no<br>Meu Bolso<span class="question">?</span></span></a>
+    <span class="header-note">Menos dúvida.<br><strong>Mais clareza.</strong></span>
+  </header>
+  <main id="main" class="wrap">
+    <section id="welcome" class="welcome" aria-labelledby="welcome-title">
+      <div class="intro">
+        <span class="eyebrow"><span class="mini-line"></span> SEU DINHEIRO, SEM COMPLICAÇÃO</span>
+        <h1 id="welcome-title" tabindex="-1">Veja quanto você pode gastar hoje <span>sem se apertar depois.</span></h1>
+        <p class="lead">Informe quanto você tem, o que ainda precisa pagar e quando recebe novamente. O app mostra quanto realmente sobra por dia e como uma compra pode mudar esse valor.</p>
+        <button id="start" class="primary">Ver quanto posso gastar <span aria-hidden="true">↗</span></button>
+        <p class="micro">Grátis. Sem cadastro. Sem conectar banco.</p>
+      </div>
+      <aside class="how" aria-label="Como funciona">
+        <p class="eyebrow">UMA CONTA SIMPLES. UMA DECISÃO SUA.</p>
+        <ol>
+          <li><span class="number">01</span><div><h2>Diga quanto você tem</h2><p>Informe o que tem hoje e quando recebe de novo.</p></div></li>
+          <li><span class="number">02</span><div><h2>Coloque o que falta pagar</h2><p>Veja quanto sobra por dia depois das contas.</p></div></li>
+          <li><span class="number">03</span><div><h2>Teste uma compra</h2><p>Mude o valor e veja como fica. Quem decide é você.</p></div></li>
+        </ol>
+        <div class="how-bottom"><span aria-hidden="true">↳</span> Um pouco de clareza faz diferença.</div>
+      </aside>
+    </section>
+
+    <div class="landing-more">
+      <section class="lp-section lp-example" aria-labelledby="lp-example-title">
+        <div class="lp-section-intro"><span class="eyebrow">VEJA NA PRÁTICA</span><h2 id="lp-example-title">Seu saldo não mostra a história toda.</h2><p>Você pode ter dinheiro na conta e, ainda assim, parte dele já estar comprometida com contas e com os dias que faltam até o próximo pagamento.</p></div>
+        <div class="lp-example-layout">
+          <div class="lp-example-inputs" aria-label="Dados do exemplo">
+            <span class="lp-caption">IMAGINE ESTA SITUAÇÃO</span>
+            <dl><div><dt>Você tem hoje</dt><dd>R$ 500</dd></div><div><dt>Contas que ainda precisa pagar</dt><dd>R$ 200</dd></div><div><dt>Próximo pagamento</dt><dd>Daqui a 10 dias</dd></div></dl>
+            <p>R$ 500 − R$ 200 = R$ 300 para os próximos 10 dias.</p>
+          </div>
+          <div class="lp-example-results" aria-label="Resultado do exemplo">
+            <div class="lp-example-daily"><span>Você tem <b>R$ 300 realmente livres</b></span><strong>R$ 30 <small>por dia</small></strong><p>Até o próximo pagamento.</p></div>
+            <div class="lp-purchase-example"><span>Você quer gastar R$ 90</span><p>Veja o que muda por dia:</p><div class="lp-before-after"><div><span>Antes</span><strong>R$ 30/dia</strong></div><div><span>Depois</span><strong>R$ 21/dia</strong></div></div></div>
+          </div>
+        </div>
+        <p class="lp-example-end">A ideia não é dizer se você deve comprar. É mostrar o que muda se você comprar.</p>
+      </section>
+
+      <section class="lp-section lp-interactive" aria-labelledby="lp-interactive-title">
+        <div class="lp-section-intro"><span class="eyebrow">TESTE UMA COMPRA</span><h2 id="lp-interactive-title">Teste antes de gastar.</h2><p>Mude o valor da compra e veja na hora como isso afeta os próximos dias.</p></div>
+        <div class="lp-interactive-layout">
+          <div class="lp-demo" aria-label="Representação da área de compra da calculadora">
+            <span class="lp-screen-eyebrow">POSSO COMPRAR ISSO?</span>
+            <strong class="lp-screen-title">Quer comprar alguma coisa agora?</strong>
+            <div class="lp-demo-field"><span>Quanto custa o que você quer comprar?</span><strong>R$ 90,00</strong></div>
+            <div class="lp-demo-values" aria-label="Valores rápidos disponíveis"><span>R$ 20</span><span>R$ 50</span><span>R$ 100</span><span>R$ 200</span></div>
+            <div class="lp-demo-slider-label"><span>Ajuste arrastando</span><strong>R$ 90,00</strong></div>
+            <div class="lp-demo-slider" aria-hidden="true"><span></span></div>
+            <div class="lp-demo-compare"><div><span>ANTES DA COMPRA</span><strong>R$ 30,00</strong><small>por dia</small></div><div><span>DEPOIS DA COMPRA</span><strong>R$ 21,00</strong><small>por dia</small></div></div>
+          </div>
+          <p class="lp-demo-note">Sem fazer conta de cabeça. Você muda o valor e vê o impacto na hora.</p>
+        </div>
+      </section>
+
+      <section class="lp-section lp-steps" aria-labelledby="lp-steps-title">
+        <div class="lp-section-intro"><span class="eyebrow">TRÊS PASSOS</span><h2 id="lp-steps-title">Funciona em menos de 1 minuto.</h2></div>
+        <div class="lp-step-grid">
+          <article class="lp-step"><div class="lp-step-head"><span>01</span><h3>Diga quanto você tem</h3><p>Informe o valor disponível hoje e quando recebe de novo.</p></div><div class="lp-screen" aria-label="Representação do formulário do aplicativo"><span class="lp-screen-eyebrow">01 / SEU PONTO DE PARTIDA</span><strong class="lp-screen-title">Vamos fazer as contas?</strong><div class="lp-preview-field"><span>Quanto você tem disponível hoje?</span><b>R$ &nbsp;500,00</b></div><div class="lp-preview-field"><span>Quando recebe novamente?</span><b>Daqui a 10 dias</b></div><div class="lp-preview-field"><span>Quais contas ainda precisa pagar?</span><b>Luz &nbsp; R$ 200,00</b></div><div class="lp-preview-button">Ver quanto posso gastar ↗</div></div></article>
+          <article class="lp-step"><div class="lp-step-head"><span>02</span><h3>Desconte o que ainda precisa pagar</h3><p>Adicione as contas antes do próximo pagamento e veja quanto sobra por dia.</p></div><div class="lp-screen" aria-label="Representação do resultado do aplicativo"><span class="lp-screen-eyebrow">02 / MAIS CLAREZA PARA DECIDIR</span><strong class="lp-screen-title">Seu dinheiro, dia a dia.</strong><div class="lp-preview-daily"><span>Seu limite diário é de aproximadamente</span><strong>R$ 30,00</strong><small>por dia</small><p>Você tem R$ 300,00 livres até o próximo pagamento.</p></div><div class="lp-preview-row"><span>Contas até o pagamento</span><b>R$ 200,00</b></div></div></article>
+          <article class="lp-step"><div class="lp-step-head"><span>03</span><h3>Teste suas compras</h3><p>Veja quanto sobra por dia antes e depois de gastar.</p></div><div class="lp-screen" aria-label="Representação da simulação de compra do aplicativo"><span class="lp-screen-eyebrow">POSSO COMPRAR ISSO?</span><strong class="lp-screen-title">Quer comprar alguma coisa agora?</strong><div class="lp-preview-field"><span>Quanto custa o que você quer comprar?</span><b>R$ &nbsp;90,00</b></div><div class="lp-preview-compare"><div><span>Antes da compra</span><b>R$ 30,00</b><small>por dia</small></div><div><span>Depois da compra</span><b>R$ 21,00</b><small>por dia</small></div></div><div class="lp-preview-row"><span>Saldo depois da compra</span><b>R$ 210,00</b></div></div></article>
+        </div>
+      </section>
+
+      <section class="lp-section lp-reasons" aria-labelledby="lp-reasons-title"><div class="lp-section-intro"><span class="eyebrow">POR QUE ISSO AJUDA?</span><h2 id="lp-reasons-title">Porque R$ 100 não têm o mesmo peso todos os dias.</h2></div><div class="lp-reason-grid"><article><span>01 / CONTAS</span><h3>Você sabe o que realmente está livre</h3><p>O app desconta as contas que ainda vêm pela frente.</p></article><article><span>02 / DIAS</span><h3>Você enxerga o dinheiro por dia</h3><p>Veja quanto pode distribuir pelos dias até receber.</p></article><article><span>03 / COMPRAS</span><h3>Você vê o efeito antes</h3><p>Teste diferentes valores antes de fazer uma compra.</p></article></div></section>
+
+      <section class="lp-section lp-play" aria-labelledby="lp-play-title"><div class="lp-section-intro"><span class="eyebrow">MUDE E VEJA</span><h2 id="lp-play-title">Brinque com os valores antes de decidir.</h2><p>R$ 20, R$ 50, R$ 100 ou qualquer outro valor. Ajuste a compra e veja o resultado mudar em tempo real.</p></div><div class="lp-play-preview" aria-label="Exemplo dos valores que você pode testar"><div class="lp-play-options"><span>R$ 20</span><span>R$ 50</span><span class="selected">R$ 100</span><span>R$ 200</span><div class="lp-play-track" aria-hidden="true"><span></span></div></div><div class="lp-play-result"><span>ANTES <strong>R$ 30/dia</strong></span><span>DEPOIS <strong>R$ 20/dia</strong></span></div></div></section>
+
+      <section class="lp-section lp-free" aria-labelledby="lp-free-title"><div><span class="eyebrow">SEM PEGADINHA</span><h2 id="lp-free-title">Sim. É grátis.</h2><p>Você pode fazer suas simulações sem criar conta, cadastrar cartão ou conectar sua conta bancária.</p><button type="button" class="primary lp-cta">Testar agora gratuitamente <span aria-hidden="true">↗</span></button></div><ul aria-label="O que não é necessário"><li>Sem cadastro</li><li>Sem cartão</li><li>Sem assinatura</li><li>Sem conectar banco</li></ul></section>
+
+      <section class="lp-section lp-privacy" aria-labelledby="lp-privacy-title"><div class="lp-section-intro"><span class="eyebrow">SEUS DADOS</span><h2 id="lp-privacy-title">Seu dinheiro continua sendo assunto seu.</h2><p>Os valores que você informa ficam armazenados apenas no seu dispositivo. O Cabe no Meu Bolso? não acessa sua conta bancária e não recebe os valores financeiros que você digita.</p></div><ul><li><span class="lp-check" aria-hidden="true">✓</span>Seus valores ficam no seu dispositivo</li><li><span class="lp-check" aria-hidden="true">✓</span>Nenhuma conexão com banco</li><li><span class="lp-check" aria-hidden="true">✓</span>Você pode limpar seus dados quando quiser</li></ul></section>
+
+      <section class="lp-section lp-faq" aria-labelledby="lp-faq-title"><div class="lp-section-intro"><span class="eyebrow">SEM LETRAS MIÚDAS</span><h2 id="lp-faq-title">Dúvidas frequentes</h2></div><div class="lp-faq-list">
+        <details><summary>O Cabe no Meu Bolso? é grátis?</summary><p>Sim. Você pode usar a ferramenta gratuitamente.</p></details>
+        <details><summary>Preciso criar uma conta?</summary><p>Não. É só abrir, preencher e usar.</p></details>
+        <details><summary>Preciso conectar meu banco?</summary><p>Não. O app não acessa banco, cartão ou Open Finance.</p></details>
+        <details><summary>Vocês veem quanto dinheiro eu tenho?</summary><p>Não. Os valores ficam armazenados apenas no seu dispositivo.</p></details>
+        <details><summary>O app diz se eu devo comprar?</summary><p>Não. Ele mostra como a compra muda o dinheiro que sobra por dia. A decisão continua sendo sua.</p></details>
+        <details><summary>Posso testar vários valores?</summary><p>Sim. Você pode digitar valores, usar botões rápidos e ajustar pelo slider.</p></details>
+        <details><summary>Posso apagar meus dados?</summary><p>Sim. O app possui uma opção para limpar os dados armazenados no dispositivo.</p></details>
+      </div></section>
+
+      <section class="lp-section lp-final" aria-labelledby="lp-final-title"><span class="eyebrow">FAÇA A CONTA ANTES DE DECIDIR</span><h2 id="lp-final-title">Antes de gastar, veja o que sobra depois.</h2><p>Leva menos de 1 minuto para descobrir quanto realmente sobra até o próximo pagamento.</p><button type="button" class="primary lp-cta">Ver quanto posso gastar <span aria-hidden="true">↗</span></button><small>Grátis. Sem cadastro.</small></section>
+    </div>
+
+    <section id="calculator" class="calculator" hidden aria-labelledby="calculator-title">
+      <button class="back" id="back-home">← Início</button>
+      <div class="section-heading"><span class="eyebrow">01 / SEU PONTO DE PARTIDA</span><h1 id="calculator-title" tabindex="-1">Vamos fazer as contas?</h1><p>O que você tem hoje e o que ainda precisa pagar.</p></div>
+      <form id="budget-form" novalidate>
+        <div class="field-pair">
+          <div class="field"><label for="balance">Quanto você tem disponível hoje?</label><div class="money-input"><span aria-hidden="true">R$</span><input id="balance" name="balance" inputmode="decimal" placeholder="0,00" maxlength="30" required autocomplete="off" aria-describedby="balance-error"></div><p class="field-error" id="balance-error"></p></div>
+          <div class="field"><label for="payment-date">Quando recebe novamente?</label><input id="payment-date" type="date" name="payment-date" required aria-describedby="date-hint payment-date-error"><p id="date-hint" class="hint">Escolha uma data a partir de amanhã.</p><p class="field-error" id="payment-date-error"></p></div>
+        </div>
+        <div class="bills-heading"><h2>Quais contas ainda precisa pagar antes dessa data?</h2><p>Inclua só as contas que sairão do saldo informado.</p></div>
+        <div id="bills"></div>
+        <p id="no-bills" class="empty-bills">Nenhuma conta adicionada. Se não tiver contas, pode continuar.</p>
+        <button type="button" id="add-bill" class="add-button">+ Adicionar conta</button>
+        <p id="budget-error" class="form-error" role="alert"></p>
+        <button class="primary wide" type="submit">Ver quanto posso gastar <span aria-hidden="true">↗</span></button>
+      </form>
+    </section>
+
+    <section id="results" hidden aria-labelledby="results-title">
+      <button id="edit" class="back">← Ajustar valores</button>
+      <div class="section-heading"><span class="eyebrow">02 / MAIS CLAREZA PARA DECIDIR</span><h1 id="results-title" tabindex="-1">Seu dinheiro, dia a dia.</h1><p id="date-summary"></p></div>
+      <div class="results-grid">
+        <div class="budget-result">
+          <div class="daily-panel"><p id="daily-heading">Seu limite diário é de aproximadamente</p><div class="daily-amount"><strong id="daily-value"></strong><span>por dia</span></div><p id="free-text"></p></div>
+          <div id="budget-deficit" class="warning" role="status" hidden></div>
+          <dl class="breakdown"><div><dt>Disponível hoje</dt><dd id="summary-balance"></dd></div><div><dt>Contas até o pagamento</dt><dd id="summary-bills"></dd></div><div><dt>Dias até receber</dt><dd id="summary-days"></dd></div></dl>
+          <p class="hint explanation">Uma referência para se planejar, com base no que você informou. Os dias incluem hoje e não incluem o dia do pagamento. O valor diário é arredondado para baixo.</p>
+          <button type="button" id="reset" class="text-button">Refazer tudo</button>
+        </div>
+        <div class="purchase-panel">
+          <span class="eyebrow">POSSO COMPRAR ISSO?</span><h2>Quer comprar alguma coisa agora?</h2>
+          <form id="purchase-form" novalidate>
+            <div class="field"><label for="purchase">Quanto custa o que você quer comprar?</label><div class="money-input"><span aria-hidden="true">R$</span><input id="purchase" name="purchase" inputmode="decimal" maxlength="30" placeholder="0,00" required autocomplete="off" aria-describedby="purchase-error"></div><p class="field-error" id="purchase-error" role="alert"></p></div>
+            <div class="purchase-controls"><div class="quick-values" aria-label="Valores rápidos para simular"><button type="button" data-purchase-cents="2000">R$ 20</button><button type="button" data-purchase-cents="5000">R$ 50</button><button type="button" data-purchase-cents="10000">R$ 100</button><button type="button" data-purchase-cents="20000">R$ 200</button></div><div class="slider-heading"><label for="purchase-slider">Ajuste arrastando</label><output id="purchase-slider-value" for="purchase-slider">R$ 0,00</output></div><input type="range" id="purchase-slider" min="0" max="20000" step="100" value="0" aria-describedby="purchase-slider-max"><p class="hint" id="purchase-slider-max">Use o campo acima para qualquer outro valor.</p></div>
+            <button type="submit" class="primary wide">Ver como essa compra impacta meu dinheiro</button>
+          </form>
+          <div id="purchase-result" hidden aria-live="polite" tabindex="-1">
+            <div class="comparison"><div><span>ANTES DA COMPRA</span><strong id="before-daily"></strong><span>por dia</span></div><div><span>DEPOIS DA COMPRA</span><strong id="after-daily"></strong><span>por dia</span></div></div>
+            <p id="daily-impact" class="daily-impact"></p>
+            <dl class="purchase-balances"><div><dt>Saldo antes da compra</dt><dd id="before-balance"></dd></div><div><dt>Saldo depois da compra</dt><dd id="after-balance"></dd></div><div><dt>Dias até o pagamento</dt><dd id="purchase-days"></dd></div></dl>
+            <p id="purchase-warning" class="warning" hidden></p>
+            <p id="purchase-guidance" class="purchase-guidance"></p>
+            <p class="hint">Essa simulação não desconta a compra do seu saldo salvo. A decisão continua sendo sua.</p>
+            <button type="button" id="another" class="secondary wide">Simular outra compra</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <p id="storage-message" class="notice" role="status" hidden></p>
+    <p id="status-message" class="sr-only" role="status"></p>
+  </main>
+  <footer class="footer wrap"><div class="lp-footer-info"><strong>Cabe no Meu Bolso?</strong><p>Uma ferramenta simples para ajudar você a visualizar melhor suas decisões do dia a dia.</p><div class="privacy-note"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3 4 6v5c0 5 8 10 8 10s8-5 8-10V6z"/><path d="m8 11 3 3 5-5"/></svg><p>Seus dados financeiros ficam apenas neste dispositivo. O app não acessa sua conta bancária e não envia os valores informados para servidores de análise.</p></div></div><div class="footer-actions"><button id="privacy-open" class="text-button">Privacidade</button><span aria-hidden="true">·</span><button id="clear-data" class="text-button">Limpar meus dados</button></div></footer>
+  <dialog id="privacy-dialog" aria-labelledby="privacy-title"><div class="dialog-content"><h2 id="privacy-title">Seu dinheiro é assunto seu.</h2><p>Saldo, data do próximo pagamento, nomes e valores das contas e última compra simulada são salvos somente neste navegador, usando o armazenamento local do dispositivo. Não há conta, cadastro, conexão bancária nem banco de dados.</p><p>Em um dispositivo compartilhado, outras pessoas com acesso a este navegador podem ver os dados. Use “Limpar meus dados” para apagá-los. Se o navegador bloquear o armazenamento, o app funciona enquanto esta página estiver aberta.</p><h3>Estatísticas de uso</h3><p>Quando configuradas e aceitas por você, as estatísticas usam Google Analytics 4 para contar visitas, sessões e ações como iniciar e concluir uma simulação. Ele usa cookies técnicos de análise e informações como tipo de dispositivo para estimar visitantes novos e recorrentes. Não gravamos a tela nem enviamos valores, nomes de contas ou a data de pagamento nos eventos.</p><p>Sem aceitar as estatísticas, você continua usando normalmente. Sua escolha vale nesta página; não salvamos essa preferência no armazenamento local. Bloqueadores podem impedir a contagem de visitas.</p><button id="privacy-close" class="primary wide">Entendi</button></div></dialog>
+  <aside id="analytics-consent" class="consent" hidden aria-label="Estatísticas de uso"><p><strong>Ajuda a melhorar?</strong> Podemos contar visitas e cliques, sem seus valores e sem gravar a tela.</p><div><button id="analytics-decline" class="secondary">Agora não</button><button id="analytics-accept" class="primary">Permitir estatísticas</button></div></aside>
+  <noscript><p class="notice">Ative o JavaScript no navegador para usar a calculadora. Nenhum dado é enviado para realizar os cálculos.</p></noscript>
+</body></html>
